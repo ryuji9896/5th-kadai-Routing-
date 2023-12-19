@@ -5,6 +5,6 @@ Controller AAAのAction bbbに渡す
 (prefixは問題文通りであれば不要ですがより有用な形にするために使用しました。)
 */
 use App\Http\Controllers\AAAController;
-Route::Controller(AAA::class)->prefix('XXX')->group(function() {
+Route::Controller(AAAController::class)->prefix('XXX')->group(function() {
     Route::get('','bbb');
 });
